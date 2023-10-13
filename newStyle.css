@@ -1,0 +1,217 @@
+/*index page start*/
+
+/* Style the page */
+/* Style the page */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Style the links */
+  .page a {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Add hover effect to the links */
+  .page a:hover {
+    background-color: transparent;
+  }
+  
+  /* Style the welcome message */
+ 
+  
+  .line {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+    color: blue;
+  }
+  
+  /* Style the welcome message span elements */
+  .line span {
+    font-size: 50px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+  /* Add animation to the welcome message span elements */
+  .line span {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Define the bounce animation */
+  @keyframes bounce {
+    from {transform: translateY(0);}
+    to {transform: translateY(-20px);}
+  }
+  
+  /* Style the get started link */
+  .line-child {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the get started link h3 element */
+  .line-child h3 {
+    font-size: 30px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+
+    
+  }
+  
+  /* Add hover effect to the get started link h3 element */
+  .line-child h3:hover {
+    color: #4CAF50;
+  }
+  
+  /* Add a unique background for the body element */
+  .index {
+    background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80.jpg");
+  }
+  
+/*index page end*/  
+
+/*project */
+.logo
+{
+  font-size: 40px;
+  color: beige;
+  font-weight: bolder;
+}
+
+ /* Set the background color of the body */
+ .projectBody{ background-color: rgb(24, 176, 176); }
+
+/* Set the height and width of the video elements */
+video {
+    height: 300px;
+    width: 400px;
+}
+
+/* Align the video elements to the right of their parent divs */
+.vid {
+  float:right;
+  width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+/* Add some padding and margin to the project divs */
+.project1 {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+}
+
+/* Add some hover effect to the project divs */
+.project1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Add some styling to the project details divs */
+.det-project {
+    flex-grow: 1;
+    max-width: 50%;
+}
+/*project end*/
+
+/*thank you page*/
+
+.thankyou {
+  background-color: #00A2E8;
+  font-family: Arial, sans-serif;
+}
+
+.thank {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  animation: fade-in-out 3s infinite;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*thankyou page end*/
+
+/*certificates*/
+
+/* Style the header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+}
+
+/* Add some animation to the header text */
+.header span {
+  animation: rainbow 3s infinite;
+}
+
+/* Define the rainbow animation */
+@keyframes rainbow {
+  0% { color: rgb(11, 11, 198); }
+  10% { color: purple; }
+  20% { color: rgb(62, 128, 0); }
+  30% { color: rgb(63, 181, 5); }
+  40% { color: rgb(215, 26, 80); }
+  50% { color: rgb(89, 3, 3); }
+  60% { color: rgb(67, 221, 238); }
+  70% { color: rgb(15, 244, 194); }
+  80% { color: rgb(226, 145, 24); }
+  90% { color: rgb(228, 65, 168); }
+}
+
+/* Style the section */
+.sec-certificate {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the certificates container */
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+/* Style each certificate image and text */
+.im1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.im1 img {
+   width: 100%;
+   height: 500px;
+   max-width:100%;
+   max-height:100%;
+   object-fit: contain;
+   margin-bottom:10px;
+}
+
+.im1 h4 {
+   text-align:center;
+}
+/*certificates end*/
